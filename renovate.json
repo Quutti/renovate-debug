@@ -13,7 +13,7 @@
     "bumpVersion": "patch",
     "packageRules": [
       {
-        "matchPackageNames": ["!@angular/**"],
+        "matchPackageNames": ["*"],
         "enabled": false
       },
       {
