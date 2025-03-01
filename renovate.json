@@ -13,12 +13,11 @@
     "bumpVersion": "patch",
     "packageRules": [
       {
-        "matchPackageNames": ["*"],
+        "matchPackageNames": ["!@mui/**"],
         "enabled": false
       },
       {
         "matchPackageNames": ["@mui/**"],
-        "matchUpdateTypes": ["minor", "patch"],
         "prPriority": 100,
         "schedule": ["at any time"],
         "enabled": true
