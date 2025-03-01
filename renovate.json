@@ -13,11 +13,11 @@
     "bumpVersion": "patch",
     "packageRules": [
       {
-        "matchPackageNames": ["*"],
+        "matchPackageNames": ["!/^@angular/"],
         "enabled": false
       },
       {
-        "matchPackageNames": ["@angular/**"],
+        "matchPackageNames": ["/^@angular/"],
         "matchUpdateTypes": ["patch", "minor"],
         "prPriority": 100,
         "schedule": ["at any time"],
