@@ -1,0 +1,31 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "enabled": true,
+    "extends": ["config:base", ":semanticPrefixChore", ":disableMajorUpdates"],
+    "timezone": "Europe/Helsinki",
+    "dependencyDashboard": true,
+    "labels": ["dependencies"],
+    "rebaseWhen": "behind-base-branch",
+    "updateNotScheduled": false,
+    "vulnerabilityAlerts": {
+      "labels": ["security"]
+    },
+    "bumpVersion": "patch",
+    "packageRules": [
+      {
+        "matchPackageNames": ["!@mui/**"],
+        "enabled": false
+      },
+      {
+        "matchPackageNames": ["@mui/**"],
+        "matchUpdateTypes": ["major"],
+        "enabled": false
+      },
+      {
+        "matchPackageNames": ["@mui/**"],
+        "prPriority": 100,
+        "schedule": ["at any time"],
+        "enabled": true
+      }
+    ]
+  }
