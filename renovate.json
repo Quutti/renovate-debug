@@ -13,12 +13,7 @@
     "bumpVersion": "patch",
     "packageRules": [
       {
-        "matchPackageNames": ["!@mui/**"],
-        "enabled": false
-      },
-      {
-        "matchPackageNames": ["@mui/**"],
-        "matchUpdateTypes": ["major"],
+        "matchPackageNames": ["*"],
         "enabled": false
       },
       {
