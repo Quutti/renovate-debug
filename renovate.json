@@ -23,5 +23,6 @@
         "schedule": ["at any time"],
         "enabled": true
       }
-    ]
+    ],
+    "npmrc": "legacy-peer-deps=true"
   }
