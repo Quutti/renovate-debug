@@ -18,6 +18,7 @@
       },
       {
         "matchPackageNames": ["@mui/**"],
+        "matchUpdateTypes": ["patch", "minor"],
         "prPriority": 100,
         "schedule": ["at any time"],
         "enabled": true
