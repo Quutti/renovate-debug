@@ -9,8 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@mui/icons-material": "5.16.1",
-    "@mui/material": "5.16.1",
+    "@angular/cli": "18.2.1",
+    "@angular/forms": "^18.2.13",
+    "@angular/router": "18.2.1",
     "lodash": "3.9.1"
   }
 }
